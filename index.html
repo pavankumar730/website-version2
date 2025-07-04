@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modern E-commerce</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-container">
+      <h1 class="logo">stoper shop</h1>
+      <nav>
+        <button id="signInBtn" class="btn btn-secondary">Sign In</button>
+        <button id="signOutBtn" class="btn btn-secondary hidden">Sign Out</button>
+        <button id="cartToggleBtn" class="btn btn-primary">
+          Cart (<span id="cartCount">0</span>)
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <h2>Discover Our Featured Products</h2>
+        <p>Quality products with style and great prices</p>
+        <button class="btn btn-primary">Shop Now</button>
+      </div>
+    </section>
+
+    <section class="products container">
+      <h3>Products</h3>
+      <div id="productGrid" class="product-grid">
+        <!-- Products will be inserted here -->
+      </div>
+    </section>
+  </main>
+
+  <aside id="cartSidebar" class="cart-sidebar hidden">
+    <h3>Your Cart</h3>
+    <ul id="cartItems" class="cart-items"></ul>
+    <div class="cart-total">
+      Total: $<span id="cartTotal">0.00</span>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
